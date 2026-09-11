@@ -1,0 +1,1 @@
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});document.querySelectorAll('section,.card,.project').forEach(e=>obs.observe(e));
